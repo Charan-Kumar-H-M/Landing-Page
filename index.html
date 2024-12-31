@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padmashree Institute of Management & Sciences</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo"><img src="logo.jpg" alt="logo"></label>
+        <ul>
+            <li><a class="active" href="#PGIHome">PGI Home</a></li>
+            <li><a href="#Accredation">Accredation</a></li>
+            <li><a href="#About Us">About Us</a></li>
+            <li><a href="#Vision and Mission">Vision & Mission</a></li>
+            <li><a href="#Programs Offered">Programs Offered</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+    </nav>
+    <section class="overview" id="PGIHome">
+        <div class="image1">
+            <img src="padmashree1.jpg" alt="Padmashree" width="100%" height="500px">
+        </div>
+        <div class="welcome">
+            <h1 class="welcome1">Welcome to Padmashree Institute of Management & Science</h1>
+            <h2 class="admin">Admissions open for A.Y. 2025-26</h2>
+            <button class="apply" id="openModalBtn">Apply Now</button>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modal" class="modal-container">
+            <div class="modal-content">
+                <span id="closeModalBtn" class="close-btn">&times;</span>
+                <h2>Admission Form</h2>
+                <form id="admissionForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="acred" id="Accredation">
+        <div class="acred1">
+            <h2>Accredited and Affiliated</h2>
+        </div>
+        <div class="image2">
+            <div class="imageaccred">
+                <img src="acredation.png" alt="a" height="250px">
+            </div>
+            <div class="imageaccred1">
+                <img src="naac.png" alt="b" height="240px" width="360px">
+            </div>
+        </div>
+    </section>
+    <section class="About" id="About Us">
+        <div class="about1">
+            <h2>About Us</h2>
+        </div>
+        <div class="aboutp">
+            <p><img src="aboutim.jpg" alt="a" width="500px"><i>The Padmashree Charitable Trust was started in the year
+                    1994 with a vision of establishing an organization working for social causes. This lead to start
+                    Padmashree Group of Educational Institutions to cater to the needs of the society Founder trustees
+                    Dr. Aswath Narayan, Sri. T K Narayanappa, and Mr. Satish together nourished this cause and have been
+                    rendering their service in this front.
+
+                    Padmashree Group of Institutions has 20 years of record in Academic Excellence. In the year 1996,the
+                    Padmashree group had its launch with the inception of the First Physiotherapy College in Bangalore
+                    under Rajeev Gandhi University of Health Sciences. With this humble beginning of a single
+                    institution with 25 students in the year 1996, Padmashree made an impressive progress with 10
+                    institutions, nurturing more than 2200 students today.
+
+                    Padmashree group has institutions offering courses both under Bangalore University and Rajiv Gandhi
+                    University of Health Sciences. This Padmashree has recognized by AICTE and research center permanent
+                    affiliation from Bangalore University.
+
+                    The Padmashree Charitable Trust was started in the year 1994 with a vision of establishing an
+                    organization working for social causes. This lead to start Padmashree Group of Educational
+                    Institutions to cater to the needs of the society Founder trustees Dr. Aswath Narayan, Sri. T K
+                    Narayanappa, and Mr. Satish.</i></p>
+        </div>
+    </section>
+    <section class="VisionandMission" id="Vision and Mission">
+        <!-- <div class="Vision">
+            <h2>Vision and Mission</h2>
+        </div> -->
+        <div class="VisionMission">
+            <div class="Vision1">
+                <h2><strong>Vision:</strong></h2>
+                <p><i>To build a robust educational ecosystem through excellent research, talent development, knowledge
+                        exchange which fosters the development of knowledge and skills for society.</i></p>
+            </div>
+            <div class="Mission1">
+                <h2><strong>Mission:</strong></h2>
+                <p><i>We are committed to achieve the value based education through
+                        Imparting superior knowledge and skills to the stakeholders
+                        conduct world-class academic and applied research based outcome
+                        Pioneer in educational field of operations by making it as most preferred destination for
+                        excellence
+                        Foster the entrepreneurial growth and contribute for the economy
+                        Equipping the stakeholder for Innovation and excellence in the field of operations
+                        Generating responsible ethical corporate citizens of the global world.</i></p>
+            </div>
+        </div>
+    </section>
+    <section class="Programs Offered" id="Programs Offered">
+        <div class="Programs">
+            <h2>Programs Offered</h2>
+        </div>
+        <div class="cards">
+            <div class="card1">
+                <a href="https://pims.in/mba/"><img src="MBA.jpg" alt="Avatar"></a>
+                <div class="container">
+                    <h4><b>MBA</b></h4>
+                </div>
+            </div>
+            <div class="card1">
+                <a href="https://pims.in/bcom/"><img src="BCom.jpg" alt="Avatar"></a>
+                <div class="container">
+                    <h4><b>B.Com</b></h4>
+                </div>
+            </div>
+            <div class="card1">
+                <a href="https://pims.in/bba/"><img src="BBA.jpg" alt="Avatar"></a>
+                <div class="container">
+                    <h4><b>BBA</b></h4>
+                </div>
+            </div>
+            <div class="card1">
+                <a href="https://pims.in/mcom/"><img src="MCom.jpg" alt="Avatar"></a>
+                <div class="container">
+                    <h4><b>M.Com</b></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Gallery" id="Gallery">
+        <div class="gallery2">
+            <h2>Gallery</h2>
+        </div>
+        <div class="gallery1">
+            <div class="gal"><img src="g1.png" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g2.png" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g3.png" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g4.jpg" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g5.jpg" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g6.jpg" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g7.jpg" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g8.jpg" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g9.jpg" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g10.jpg" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g11.jpg" alt="" width="300px" height="300px"></div>
+            <div class="gal"><img src="g12.jpg" alt="" width="300px" height="300px"></div>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <div class="test">
+            <h2>Testimonials</h2>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>I Hayath Rahaman., Pursued MBA- HR in 2014, working in Construction Company in Qatar would like to
+                    express my sincere gratitude to Padmashree Institute of Management and Sciences for helping me at
+                    each and every step during the vital years of my life and build my career.</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">- Hayath Rahaman</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p> I Arun Kumar pursued MBA- Finance, Working in SBI Bank - Kerala It is a joy for me to be a member of
+                    the institution, since my two years at Padmashree Institute of Management and Sciences in Bangalore
+                    have provided me with some of the loveliest memories with which I would want to reminiscence.</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">- Arun Kumar</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>I Chithra currently working in IT Company in UK was a Alumini of Padmashree Institute of Management
+                    and Sciences Completed my MBA-Marketing in the year 2011.I am very proud and blessed to be a part of
+                    this college as it has taught me many lessons for life and making a landmark in my life and career.
+                </p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">- Chithra</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer1">
+        <div class="foot">
+            <h3>Stay Informed</h3>
+            <div class="foot1">
+                <i class="fas fa-map-marker-alt" style="color: white;">
+                    <p>Padmashree Institute of Management and Sciences, Padmashree Campus, # 146, Kommaghatta
+                        Village,Sulikere Post, Kengeri, Bangalore – 560 060</p>
+                </i>
+            </div>
+            <div class="foot2">
+                <i class="fas fa-envelope" style="color: #ffffff;"><a
+                        href="mailto:pimsdirector@gmail.com">pimsdirector@gmail.com</a></i>
+            </div>
+            <div class="foot3">
+                <i class="fas fa-mobile" style="color: #ffffff;">
+                    <p>+91 90087 59373</p>
+                </i>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="cont">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="cont1">
+                <a href="https://www.facebook.com/PadmashreeIMS"><i class="fab fa-facebook"
+                        style="color: #FFD43B;"></i></a>
+                <a href="https://www.instagram.com/pimsmanagementofficial"></a><i class="fab fa-instagram-square"
+                    style="color: #FFD43B;"></i></a>
+                <a href="https://www.youtube.com/@padmashreeinstituteofmanag7052"><i class="fab fa-youtube"
+                        style="color: #FFD43B;"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>

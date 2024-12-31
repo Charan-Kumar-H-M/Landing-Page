@@ -1,0 +1,729 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background: #253a81;
+    height: 80px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+nav ul li ul.dropdown li {
+    display: block;
+    line-height: 30px;
+}
+
+nav ul li ul.dropdown {
+    width: 35%;
+    background: #253a81;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+a.active,
+a:hover {
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+button {
+    position: relative;
+    background-color: yellow;
+    margin-left: 10px;
+    padding: 10px;
+    top: -280px;
+    left: 580px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+button a {
+    color: black;
+    font-weight: bold;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:900px) {
+    .logo {
+        font-size: 10px;
+        padding-left: 10px;
+        width: 100px;
+        z-index: 999;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    button {
+        left: 250px;
+    }
+}
+
+@media(max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #253a81;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+    }
+
+    #check:checked~ul {
+        left: 0px;
+    }
+
+    button {
+        left: 250px;
+    }
+
+}
+
+.image1 {
+    /* opacity: 0.5; */
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.welcome1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: -420px;
+    font-size: 60px;
+    /* z-index: 999; */
+}
+
+.admin {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: -420px;
+    margin-top: 30px;
+}
+
+.apply {
+    position: relative;
+    cursor: pointer;
+    max-width: 100px;
+    top: -420px;
+    left: 0px;
+}
+
+@media (max-width:900px) {
+    .image1 {
+        width: 100%;
+
+    }
+
+    .welcome1 {
+        margin-top: -80px;
+        font-size: 50px;
+    }
+
+    .apply {
+        left: 0px;
+        max-width: 96px;
+        margin-top: 5px;
+    }
+}
+
+.acred1 {
+    position: relative;
+    text-align: center;
+    top: -200px;
+    z-index: -1;
+}
+
+.image2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageaccred {
+    position: relative;
+    margin-left: 50px;
+    margin-right: auto;
+    display: inline-block;
+    width: 33.33%;
+    height: 300px;
+    margin-top: -100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    z-index: -1;
+    /* width: 100%;
+    float: left;
+  width: 33.33%;
+  padding: 20px;
+  margin-top: -100px;
+  margin-left: 20px; */
+}
+
+.imageaccred1 {
+    position: relative;
+    margin-left: 10px;
+    margin-right: auto;
+    display: inline-block;
+    width: 33.33%;
+    height: 300px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    z-index: -1;
+    /* width: 100%;
+    float: left;
+  width: 33.33%;
+  padding: 20px;
+  margin-top: -100px;
+  margin-left: 20px; */
+}
+
+@media screen and (max-width:505px) {
+    .acred1 {
+        top: -315px;
+    }
+
+    .imageaccred {
+        width: 400px;
+        top: -200px;
+        margin-left: 50px;
+    }
+
+    .imageaccred1 {
+        width: 200px;
+        top: -100px;
+    }
+}
+
+.About {
+    /* background: #b2d3ea; */
+    margin-top: -100px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+.about1 {
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.imageabout {
+    padding: 20px;
+}
+
+.aboutp img {
+    float: left;
+    padding: 10px;
+}
+
+.aboutp p {
+    line-height: 1.6;
+    padding: 10px;
+    color: white;
+    text-align: justify;
+}
+
+.VisionandMission {
+    /* background: #253a81; */
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    padding-top: 10px;
+}
+
+.Vision {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.VisionMission {
+    width: 100%;
+}
+
+.Vision1 {
+    width: 49%;
+    float: left;
+    height: 300px;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    overflow-y: auto;
+    /* background: #b2d3ea; */
+    background: rgb(215, 185, 9);
+    background: linear-gradient(0deg, rgba(215, 185, 9, 1) 0%, rgba(34, 62, 195, 1) 100%);
+}
+
+.Vision1 h2 {
+    padding: 10px;
+    color: white;
+}
+
+.Vision1 p {
+    padding: 10px;
+    line-height: 1.8;
+    text-align: justify;
+    color: white;
+}
+
+.Mission1 {
+    margin-left: 49%;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: auto;
+    /* background: #b2d3ea; */
+    background: rgb(215, 185, 9);
+    background: linear-gradient(0deg, rgba(215, 185, 9, 1) 0%, rgba(34, 62, 195, 1) 100%);
+}
+
+.Mission1 h2 {
+    padding: 10px;
+    color: white;
+}
+
+.Mission1 p {
+    padding: 10px;
+    line-height: 1.8;
+    text-align: justify;
+    color: white;
+}
+
+@media screen and (max-width:505px) {
+    .aboutp img {
+        float: left;
+        width: 360px;
+    }
+
+    Vision1 p {
+        padding: 10px;
+        line-height: 1.8;
+        text-align: center;
+        color: white;
+    }
+
+    .Mission1 p {
+        padding: 10px;
+        line-height: 1.8;
+        text-align: center;
+        color: white;
+    }
+}
+
+.Programs {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+
+.card1 img {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.container {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.card1:hover {
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.Gallery {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.gallery1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* .gallery1>div{
+    width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 10px;
+} */
+
+.gallery2 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.gal {
+    margin-top: 10px;
+}
+
+.gal:hover {
+    opacity: 0.7;
+}
+
+.testimonials {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #d6ddff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.wrapper {
+    max-width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.6;
+    place-items: center;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.test {
+    padding: 10px;
+    color: white;
+}
+
+.wrapper .box {
+    /* background: #bcc5f2; */
+    border-radius: 3px;
+    padding: 25px;
+    width: calc(33% - 10px);
+    background: rgb(215, 185, 9);
+    background: linear-gradient(0deg, rgba(215, 185, 9, 1) 0%, rgba(34, 62, 195, 1) 100%);
+}
+
+.wrapper .box i.quote {
+    font-size: 30px;
+    color: white;
+}
+
+.wrapper .box p {
+    color: white;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer1 {
+    background: black;
+    margin-top: 10px;
+    
+ 
+}
+
+.fa-map-marker-alt {
+    padding: 10px;
+}
+
+.foot h3 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.foot1 p {
+    position: relative;
+    font-size: 13px;
+    top: -15px;
+    left: 20px;
+    
+}
+.foot1{
+    z-index: -1;
+}
+
+.fa-envelope {
+    padding: 10px;
+}
+
+.foot2 a {
+    color: white;
+    padding-left: 10px;
+}
+
+.fa-mobile {
+    padding: 10px;
+}
+
+.foot3 p {
+    position: relative;
+    font-size: 13px;
+    top: -15px;
+    left: 20px;
+}
+
+.cont {
+    color: white;
+    text-align: center;
+}
+
+/* .fa-facebook{
+    position: relative;
+    left: 280px;
+} */
+/* .fa-instagram-square{
+    position: relative;
+    left: 300px;
+} */
+.cont1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:505px) {
+    .gallery1 {
+
+        padding: 40px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 505px) {
+    .testimonials {
+        height: auto;
+        padding: 20px;
+    }
+
+    .testimonials .wrapper {
+        display: block;
+        gap: 20px;
+    }
+
+    .testimonials .box {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .testimonials .quote {
+        font-size: 1.5em;
+    }
+
+    .testimonials h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .testimonials {
+        display: grid;
+        height: 100%;
+        place-items: center;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        padding: 40px 20px;
+    }
+
+    .testimonials .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .testimonials .box {
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .testimonials .quote {
+        font-size: 2em;
+        color: #0099ff;
+    }
+
+    .testimonials .content {
+        margin-top: 10px;
+    }
+
+    .testimonials .name {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .wrapper .box {
+        /* background: #bcc5f2; */
+        border-radius: 3px;
+        /* padding: 25px; */
+        /* width: calc(33% - 10px); */
+        background: rgb(215, 185, 9);
+        background: linear-gradient(0deg, rgba(215, 185, 9, 1) 0%, rgba(34, 62, 195, 1) 100%);
+    }
+
+    .wrapper .box i.quote {
+        font-size: 30px;
+        color: white;
+    }
+
+    .wrapper .box p {
+        color: white;
+    }
+
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the welcome section */
+.welcome {
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* The modal container (hidden by default) */
+.modal-container {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* The modal content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form inputs and submit button */
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 505px) {
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        left: 0;
+        top: 0;
+    }
+
+}
